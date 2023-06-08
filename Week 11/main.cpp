@@ -1,11 +1,10 @@
 #include <iostream>
 #include <limits.h>
 #include <vector>
+#define V 6
 
 using namespace std;
 
-//define V as a global variable
-int V;
 
 //Find the minimum key value
 int minEdge(bool included[V], int key[V]) {
@@ -60,9 +59,6 @@ int prims (int graph[][6], int start) {
 
 
 int main() {
-    cout << "Enter the number of vertices in the graph : ";
-    cin >> V;
-
     int graph[][6] = {{0, 3, 0, 0, 0, 1},
                       {3, 0, 2, 1, 10, 0},
                       {0, 2, 0, 3, 0, 5},
